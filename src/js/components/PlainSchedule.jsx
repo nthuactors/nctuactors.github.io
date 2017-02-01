@@ -15,10 +15,10 @@ export default CSSModules(class extends Component {
                         <li>
                             <div className="timeInfo">
                                 <div className="IconImg">
-                                    <img src="./img/pen.png"/>
+                                    <img src="http://i.imgur.com/keURKK4.png"/>
                                 </div>
                                 <div className="IconBrief">
-                                    環境生態
+                                    訪談故事撰寫
                                 </div>
                             </div>
                             <div className="pointArrow">
@@ -28,10 +28,10 @@ export default CSSModules(class extends Component {
                         <li>
                             <div className="timeInfo">
                                 <div className="IconImg">
-                                    <img src="./img/pen.png"/>
+                                    <img src="http://i.imgur.com/Q5AwnDc.png"/>
                                 </div>
                                 <div className="IconBrief">
-                                    環境生態
+                                    短篇影音紀錄
                                 </div>
                             </div>
                             <div className="pointArrow">
@@ -41,23 +41,10 @@ export default CSSModules(class extends Component {
                         <li>
                             <div className="timeInfo">
                                 <div className="IconImg">
-                                    <img src="./img/pen.png"/>
+                                    <img src="http://i.imgur.com/pUp6Opi.png"/>
                                 </div>
                                 <div className="IconBrief">
-                                    環境生態
-                                </div>
-                            </div>
-                            <div className="pointArrow">
-                                <img src="./arrow.png" />
-                            </div>
-                        </li>
-                        <li>
-                            <div className="timeInfo">
-                                <div className="IconImg">
-                                    <img src="./img/pen.png"/>
-                                </div>
-                                <div className="IconBrief">
-                                    環境生態
+                                    故事蒐集成冊
                                 </div>
                             </div>
                         </li>

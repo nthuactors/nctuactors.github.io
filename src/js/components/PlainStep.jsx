@@ -14,34 +14,26 @@ export default CSSModules(class extends Component {
                     <ul>
                         <li>
                             <div className="IconImg">
-                                <img src="./img/pen.png"/>
+                                <img src="http://i.imgur.com/keURKK4.png"/>
                             </div>
                             <div className="IconBrief">
-                                環境生態
+                                訪談故事撰寫
                             </div>
                         </li>
                         <li>
                             <div className="IconImg">
-                                <img src="./img/balance.png"/>
+                                <img src="http://i.imgur.com/Q5AwnDc.png"/>
                             </div>
                             <div className="IconBrief">
-                                產業創新
+                                短篇影音紀錄
                             </div>
                         </li>
                         <li>
                             <div className="IconImg">
-                                <img src="./img/group.png"/>
+                                <img src="http://i.imgur.com/pUp6Opi.png"/>
                             </div>
                             <div className="IconBrief">
-                                人文藝術
-                            </div>
-                        </li>
-                        <li>
-                            <div className="IconImg">
-                                <img src="./img/business.png"/>
-                            </div>
-                            <div className="IconBrief">
-                                在地經營
+                                故事蒐集成冊
                             </div>
                         </li>
                     </ul>

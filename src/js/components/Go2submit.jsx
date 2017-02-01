@@ -7,7 +7,7 @@ export default CSSModules(class extends Component {
             <div className="submitIntro">
                 <div className="submittext">
                     <p>
-                        清華精神：「厚德載物，自強不息」。我們希望透過此計畫，讓行動得以傳承，改變得以蔓延。
+                        我們想要找到努力實踐夢想之清華校友。如果你認識、或你自己就是這樣的行動者，歡迎提名或報名！
                     </p>
                 </div>
                 <div className="submitBtn">
