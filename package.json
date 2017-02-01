@@ -4,6 +4,7 @@
   "description": "---  - React  - Webpack  - Babel  - ES6  - Alt (flux implementation)",
   "main": "index.js",
   "dependencies": {
+    "element-class": "^0.2.2",
     "file-loader": "^0.9.0",
     "history": "^4.3.0",
     "json-beautify": "^1.0.1",
