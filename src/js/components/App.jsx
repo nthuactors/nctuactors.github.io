@@ -3,11 +3,10 @@ import Containers from 'containers'
 import Radium, { StyleRoot } from 'radium'
 import CSSModules from 'react-css-modules'
 
-@Radium
-export default CSSModules(class extends Component {
+class Content extends Component {
     render () {
         return (
-            <StyleRoot>
+            <div>
                 <Containers.Navbar/>
                 <div style={{
                     height: '50px',
@@ -24,9 +23,17 @@ export default CSSModules(class extends Component {
                 <div className="section darken">
                     <div className="sectionTitle">
                         <h1>計畫簡介</h1>
-                        <p></p>
                     </div>
-                    <div className="sectionContent"></div>
+                    <div style={{
+                        width: '75%',
+                        minWidth: '600px',
+                        '@media screen and (maxWidth: 1024px)': {
+                            width: '100%'
+                        }
+                    }}
+                    className="sectionContent">
+                        <Containers.PlainIntro/>
+                    </div>
                 </div>
                 <div className="section lighten">
                     <div className="sectionTitle">
@@ -64,6 +71,17 @@ export default CSSModules(class extends Component {
                     </div>
                     <div className="sectionContent"></div>
                 </div>
+            </div>
+        )
+    }
+}
+
+@Radium
+export default CSSModules(class extends Component {
+    render () {
+        return (
+            <StyleRoot>
+                <Content/>
                 { process.env.NODE_ENV !== 'production' ? <Containers.DevTools/> : null }
             </StyleRoot>
         )
