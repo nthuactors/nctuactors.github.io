@@ -27,6 +27,7 @@ class Content extends Component {
                     <div style={{
                         width: '75%',
                         minWidth: '600px',
+                        minHeight: '500px',
                         '@media screen and (maxWidth: 1024px)': {
                             width: '100%'
                         }
@@ -47,7 +48,9 @@ class Content extends Component {
                     <div className="sectionTitle">
                         <h1>計畫執行</h1>
                     </div>
-                    <div className="sectionContent"></div>
+                    <div className="sectionContent">
+                        <Containers.PlainStep/>
+                    </div>
                 </div>
                 <div className="section lighten">
                     <div className="sectionTitle">
