@@ -7,7 +7,7 @@ export default class extends Component {
     render () {
         return (
             <StyleRoot>
-                <div>XD</div>
+                <Containers.Navbar/>
                 { process.env.NODE_ENV !== 'production' ? <Containers.DevTools/> : null }
             </StyleRoot>
         )
