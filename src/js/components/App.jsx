@@ -54,7 +54,11 @@ class Content extends Component {
                 </div>
                 <div className="sm_section lighten">
                     <div className="sectionTitle">
-                        <h1>推薦表單</h1>
+                    </div>
+                    <div style={{
+                        height: '100%'
+                    }} className="sectionContent">
+                        <Containers.Go2submit/>
                     </div>
                 </div>
                 <div className="section darken">
