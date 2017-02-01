@@ -65,7 +65,9 @@ class Content extends Component {
                     <div className="sectionTitle">
                         <h1>評審團隊</h1>
                     </div>
-                    <div className="sectionContent"></div>
+                    <div className="sectionContent">
+                        <Containers.Judge/>
+                    </div>
                 </div>
                 <div className="section lighten">
                     <div className="sectionTitle">
