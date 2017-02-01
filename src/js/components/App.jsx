@@ -52,11 +52,10 @@ class Content extends Component {
                         <Containers.PlainStep/>
                     </div>
                 </div>
-                <div className="section lighten">
+                <div className="sm_section lighten">
                     <div className="sectionTitle">
                         <h1>推薦表單</h1>
                     </div>
-                    <div className="sectionContent"></div>
                 </div>
                 <div className="section darken">
                     <div className="sectionTitle">
@@ -68,13 +67,26 @@ class Content extends Component {
                     <div className="sectionTitle">
                         <h1>計畫時程</h1>
                     </div>
-                    <div className="sectionContent"></div>
+                    <div className="sectionContent">
+                        <Containers.PlainSchedule/>
+                    </div>
                 </div>
-                <div className="section darken">
-                    <div className="sectionTitle">
+                <div className="sm_section darken">
+                    <div style={{
+                        display: 'none'
+                    }}
+                    className="sectionTitle">
                         <h1>主辦單位</h1>
                     </div>
-                    <div className="sectionContent"></div>
+                    <div style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        height: '100%'
+                    }}
+                    className="sectionContent">
+                        <Containers.Footer/>
+                    </div>
                 </div>
             </div>
         )
