@@ -2,7 +2,7 @@ import { handleActions } from 'redux-actions'
 import csvjson from 'csvjson'
 
 const initialState = {
-    list: {}
+    list: []
 }
 
 export default handleActions({
@@ -12,8 +12,16 @@ export default handleActions({
                 delimiter: ',',
                 quote: '"'
             })
+            csv.shift()
+            let list = csv.map((ele) => ({
+                'name': ele[0],
+                'introduction': ele[1],
+                'photo': ele[2],
+                'first': !!ele[3],
+                'last': !!ele[4]
+            }))
             return {
-                csv
+                list
             }
         },
         throw (state, {payload}) {
