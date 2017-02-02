@@ -3,6 +3,7 @@ import Components from 'components'
 import Actions from 'js/actions'
 
 const mapStateToProps = (state) => ({
+    NominateList: state.Nominate.list
 })
 
 const mapDispatchToProps = (dispatch) => ({
