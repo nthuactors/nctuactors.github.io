@@ -2,9 +2,11 @@ import React, { Component } from 'react'
 import Containers from 'containers'
 import Radium, { StyleRoot } from 'radium'
 import CSSModules from 'react-css-modules'
+import classNames from 'classnames'
 
 class Content extends Component {
     render () {
+        let sectionIndex = 0
         return (
             <div>
                 <Containers.Navbar/>
@@ -13,14 +15,14 @@ class Content extends Component {
                     width: '100%',
                     display: 'block'
                 }}></div>
-                <div className="section lighten">
+                <div className={classNames('section', sectionIndex & 1 ? 'darken' : 'lighten')} id={`section${sectionIndex++}`}>
                     <div className="sectionTitle">
                         <h1>清大行動家</h1>
                         <p></p>
                     </div>
                     <div className="sectionContent"></div>
                 </div>
-                <div className="section darken">
+                <div className={classNames('section', sectionIndex & 1 ? 'darken' : 'lighten')} id={`section${sectionIndex++}`}>
                     <div className="sectionTitle">
                         <h1>計畫簡介</h1>
                     </div>
@@ -36,7 +38,7 @@ class Content extends Component {
                         <Containers.PlainIntro/>
                     </div>
                 </div>
-                <div className="section lighten">
+                <div className={classNames('section', sectionIndex & 1 ? 'darken' : 'lighten')} id={`section${sectionIndex++}`}>
                     <div className="sectionTitle">
                         <h1>推薦名單</h1>
                     </div>
@@ -44,7 +46,7 @@ class Content extends Component {
                         <Containers.NominateList />
                     </div>
                 </div>
-                <div className="section darken">
+                <div className={classNames('section', sectionIndex & 1 ? 'darken' : 'lighten')} id={`section${sectionIndex++}`}>
                     <div className="sectionTitle">
                         <h1>計畫執行</h1>
                     </div>
@@ -52,7 +54,7 @@ class Content extends Component {
                         <Containers.PlainStep/>
                     </div>
                 </div>
-                <div className="sm_section lighten">
+                <div className={classNames('sm_section', sectionIndex & 1 ? 'darken' : 'lighten')} id={`section${sectionIndex++}`}>
                     <div className="sectionTitle">
                     </div>
                     <div style={{
@@ -61,13 +63,13 @@ class Content extends Component {
                         <Containers.Go2submit/>
                     </div>
                 </div>
-                <div className="section darken">
+                <div className={classNames('section', sectionIndex & 1 ? 'darken' : 'lighten')} id={`section${sectionIndex++}`}>
                     <div className="sectionTitle">
                         <h1>評審團隊</h1>
                     </div>
                     <div className="sectionContent"></div>
                 </div>
-                <div className="section lighten">
+                <div className={classNames('section', sectionIndex & 1 ? 'darken' : 'lighten')} id={`section${sectionIndex++}`}>
                     <div className="sectionTitle">
                         <h1>計畫時程</h1>
                     </div>
@@ -75,7 +77,7 @@ class Content extends Component {
                         <Containers.PlainSchedule/>
                     </div>
                 </div>
-                <div className="sm_section darken">
+                <div className={classNames('sm_section', sectionIndex & 1 ? 'darken' : 'lighten')} id={`section${sectionIndex++}`}>
                     <div style={{
                         display: 'none'
                     }}
