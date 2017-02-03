@@ -18,7 +18,7 @@ export default CSSModules(class extends Component {
                                     <img src="http://i.imgur.com/keURKK4.png"/>
                                 </div>
                                 <div className="IconBrief">
-                                    訪談故事撰寫
+                                    提名截止
                                 </div>
                             </div>
                             <div className="pointArrow">
@@ -31,7 +31,7 @@ export default CSSModules(class extends Component {
                                     <img src="http://i.imgur.com/Q5AwnDc.png"/>
                                 </div>
                                 <div className="IconBrief">
-                                    短篇影音紀錄
+                                    第一階段書審
                                 </div>
                             </div>
                             <div className="pointArrow">
@@ -44,7 +44,7 @@ export default CSSModules(class extends Component {
                                     <img src="http://i.imgur.com/pUp6Opi.png"/>
                                 </div>
                                 <div className="IconBrief">
-                                    故事蒐集成冊
+                                    未來大人物
                                 </div>
                             </div>
                         </li>
