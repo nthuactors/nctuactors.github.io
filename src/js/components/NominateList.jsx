@@ -21,22 +21,26 @@ export default CSSModules(class extends Component {
     }
     render () {
         return (
-            <div>
-                <div onClick={() => { this.changeFilter('first') } }>First</div>
-                <div onClick={() => { this.changeFilter('last') } }>Last</div>
-                <ul>
-                {
-                    this.props.NominateList.map((ele, id) => (
-                            ele[this.state.filter]
-                            ? <li key={id}>
-                                <div>Name: {ele.name}</div>
-                                <div>Name: {ele.intro}</div>
-                                <img className="Nimg" src={ele.photo} />
-                            </li> : null
+            <div className="NominateContainer">
+                <div className="filterBox">
+                    <div onClick={() => { this.changeFilter('first') } }>First</div>
+                    <div onClick={() => { this.changeFilter('last') } }>Last</div>
+                </div>
+                <div className="peopleBox">
+                    <ul>
+                    {
+                        this.props.NominateList.map((ele, id) => (
+                                ele[this.state.filter]
+                                ? <li key={id}>
+                                    <div>Name: {ele.name}</div>
+                                    <div>Name: {ele.intro}</div>
+                                    <img className="Nimg" src={ele.photo} />
+                                </li> : null
+                            )
                         )
-                    )
-                }
-                </ul>
+                    }
+                    </ul>
+                </div>
             </div>
         )
     }

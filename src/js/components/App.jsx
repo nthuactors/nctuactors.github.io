@@ -20,7 +20,9 @@ class Content extends Component {
                         <h1>清大行動家</h1>
                         <p></p>
                     </div>
-                    <div className="sectionContent"></div>
+                    <div className="sectionContent">
+                        <Containers.Movie/>
+                    </div>
                 </div>
                 <div className={classNames('section', sectionIndex & 1 ? 'darken' : 'lighten')} id={`section${sectionIndex++}`}>
                     <div className="sectionTitle">

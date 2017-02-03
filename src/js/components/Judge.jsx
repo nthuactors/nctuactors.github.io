@@ -3,6 +3,44 @@ import CSSModules from 'react-css-modules'
 import Slider from 'react-slick'
 
 export default CSSModules(class extends Component {
+    constructor (props) {
+        super(props)
+        this.state = {
+            JudgeList: [
+                {
+                    'img_link': 'https://nthuactors.github.io/src/js/components/img/p1.jpg',
+                    'name': 'Kathleen',
+                    'mention': 'blalabla',
+                    'mention2': 'blalabla'
+                }, {
+                    'img_link': 'https://nthuactors.github.io/src/js/components/img/p2.jpeg',
+                    'name': 'Laura',
+                    'mention': 'blalabla',
+                    'mention2': 'blalabla'
+                }, {
+                    'img_link': 'https://nthuactors.github.io/src/js/components/img/p3.jpeg',
+                    'name': 'James',
+                    'mention': 'blalabla',
+                    'mention2': 'blalabla'
+                }, {
+                    'img_link': 'https://nthuactors.github.io/src/js/components/img/p4.jpeg',
+                    'name': 'Jeanette',
+                    'mention': 'blalabla',
+                    'mention2': 'blalabla'
+                }, {
+                    'img_link': 'https://nthuactors.github.io/src/js/components/img/p5.jpeg',
+                    'name': 'Santiago',
+                    'mention': 'blalabla',
+                    'mention2': 'blalabla'
+                }, {
+                    'img_link': 'https://nthuactors.github.io/src/js/components/img/p6.jpg',
+                    'name': 'Caroline',
+                    'mention': 'blalabla',
+                    'mention2': 'blalabla'
+                }
+            ]
+        }
+    }
     render () {
         var settings = {
             dots: true,
@@ -12,20 +50,27 @@ export default CSSModules(class extends Component {
             slidesToScroll: 1,
             responsive: [
                 { breakpoint: 768, settings: { slidesToShow: 1 } },
-                { breakpoint: 1024, settings: { slidesToShow: 3 } },
-                { breakpoint: 100000, settings: 'unslick' }
+                { breakpoint: 1024, settings: { slidesToShow: 3, slidesToScroll: 3 } }
             ]
         }
 
         return (
             <div className="JudgeIntro">
                 <Slider {...settings}>
-                    <div className="slide"><h3>1</h3></div>
-                    <div className="slide"><h3>2</h3></div>
-                    <div className="slide"><h3>3</h3></div>
-                    <div className="slide"><h3>4</h3></div>
-                    <div className="slide"><h3>5</h3></div>
-                    <div className="slide"><h3>6</h3></div>
+                    {
+                        this.state.JudgeList.map((ele, id) => (
+                            <div className="slide">
+                                <div className="slideImg">
+                                    <img src={ele.img_link} />
+                                </div>
+                                <div className="slideContent">
+                                    <h1> {ele.name} </h1>
+                                    <h2> {ele.mention} </h2>
+                                    <h2> {ele.mention2} </h2>
+                                </div>
+                            </div>
+                        ))
+                    }
                 </Slider>
             </div>
         )
