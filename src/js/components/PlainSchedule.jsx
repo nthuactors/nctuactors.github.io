@@ -15,33 +15,33 @@ export default CSSModules(class extends Component {
                         <li>
                             <div className="timeInfo">
                                 <div className="IconImg">
-                                    <img src="http://i.imgur.com/keURKK4.png"/>
+                                    <img src="https://nthuactors.github.io/src/js/components/img/hourglass.png"/>
                                 </div>
                                 <div className="IconBrief">
                                     提名截止
                                 </div>
                             </div>
                             <div className="pointArrow">
-                                <img src="./arrow.png" />
+                                <img src="https://nthuactors.github.io/src/js/components/img/right-arrow.png" />
                             </div>
                         </li>
                         <li>
                             <div className="timeInfo">
                                 <div className="IconImg">
-                                    <img src="http://i.imgur.com/Q5AwnDc.png"/>
+                                    <img src="https://nthuactors.github.io/src/js/components/img/notebook.png"/>
                                 </div>
                                 <div className="IconBrief">
                                     第一階段書審
                                 </div>
                             </div>
                             <div className="pointArrow">
-                                <img src="./arrow.png" />
+                                <img src="https://nthuactors.github.io/src/js/components/img/right-arrow.png" />
                             </div>
                         </li>
                         <li>
                             <div className="timeInfo">
                                 <div className="IconImg">
-                                    <img src="http://i.imgur.com/pUp6Opi.png"/>
+                                    <img src="https://nthuactors.github.io/src/js/components/img/star.png"/>
                                 </div>
                                 <div className="IconBrief">
                                     未來大人物

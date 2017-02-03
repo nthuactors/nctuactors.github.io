@@ -9,17 +9,17 @@ export default CSSModules(class extends Component {
                     <ul>
                         <li>
                             <div className="IconImg">
-                                <img src="./img/balance.png"/>
+                                <img src="https://nthuactors.github.io/src/js/components/img/paypal.png"/>
                             </div>
                         </li>
                         <li>
                             <div className="IconImg">
-                                <img src="./img/group.png"/>
+                                <img src="https://nthuactors.github.io/src/js/components/img/youtube.png"/>
                             </div>
                         </li>
                         <li>
                             <div className="IconImg">
-                                <img src="./img/business.png"/>
+                                <img src="https://nthuactors.github.io/src/js/components/img/periscope.png"/>
                             </div>
                         </li>
                     </ul>
@@ -33,17 +33,17 @@ export default CSSModules(class extends Component {
                     <ul>
                         <li>
                             <div className="IconImg">
-                                <img src="./img/balance.png"/>
+                                <img src="https://nthuactors.github.io/src/js/components/img/facebook-letter-logo.png"/>
                             </div>
                         </li>
                         <li>
                             <div className="IconImg">
-                                <img src="./img/group.png"/>
+                                <img src="https://nthuactors.github.io/src/js/components/img/close-envelope.png"/>
                             </div>
                         </li>
                         <li>
                             <div className="IconImg">
-                                <img src="./img/business.png"/>
+                                <img src="https://nthuactors.github.io/src/js/components/img/twitter-logo-silhouette.png"/>
                             </div>
                         </li>
                     </ul>
