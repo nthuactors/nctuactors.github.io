@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
+import CSSModules from 'react-css-modules'
 import Radium from 'radium'
 
 @Radium
-export default class extends Component {
+export default CSSModules(class extends Component {
     constructor (props) {
         super(props)
         this.changeFilter = this.changeFilter.bind(this)
@@ -30,7 +31,7 @@ export default class extends Component {
                             ? <li key={id}>
                                 <div>Name: {ele.name}</div>
                                 <div>Name: {ele.intro}</div>
-                                <img src={ele.photo} />
+                                <img className="Nimg" src={ele.photo} />
                             </li> : null
                         )
                     )
@@ -39,4 +40,4 @@ export default class extends Component {
             </div>
         )
     }
-}
+}, require('./NominateList.styl'))

@@ -33,17 +33,17 @@ export default CSSModules(class extends Component {
                     <ul>
                         <li>
                             <div className="IconImg">
-                                <img src="https://nthuactors.github.io/src/js/components/img/facebook-letter-logo.png"/>
+                                <img src="https://nthuactors.github.io/src/js/components/img/social.png"/>
                             </div>
                         </li>
                         <li>
                             <div className="IconImg">
-                                <img src="https://nthuactors.github.io/src/js/components/img/close-envelope.png"/>
+                                <img src="https://nthuactors.github.io/src/js/components/img/web.png"/>
                             </div>
                         </li>
                         <li>
                             <div className="IconImg">
-                                <img src="https://nthuactors.github.io/src/js/components/img/twitter-logo-silhouette.png"/>
+                                <img src="https://nthuactors.github.io/src/js/components/img/social-1.png"/>
                             </div>
                         </li>
                     </ul>
