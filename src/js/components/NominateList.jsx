@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
 import CSSModules from 'react-css-modules'
 import Radium from 'radium'
+import swal from 'sweetalert'
 
 @Radium
 export default CSSModules(class extends Component {
     constructor (props) {
         super(props)
         this.changeFilter = this.changeFilter.bind(this)
+        this.showMore = this.showMore.bind(this)
         this.state = {
             filter: 'first'
         }
@@ -15,6 +17,9 @@ export default CSSModules(class extends Component {
         this.setState({
             filter
         })
+    }
+    showMore (id) {
+        swal(this.props.NominateList[id].introduction)
     }
     componentDidMount () {
         this.props.getNominate()
@@ -31,7 +36,7 @@ export default CSSModules(class extends Component {
                     {
                         this.props.NominateList.map((ele, id) => (
                                 ele[this.state.filter]
-                                ? <li key={id}>
+                                ? <li key={id} onClick={() => { this.showMore(id) } }>
                                     <div> {ele.name} </div>
                                     <div> {ele.intro} </div>
                                     <div className="imgWrapper">
