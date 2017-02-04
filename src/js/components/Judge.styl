@@ -2,13 +2,21 @@
     padding: 0 30px
     margin-top: 50px
     .slide
-        border: 1px solid #50514F
         min-height: 200px
-        padding: 0 10px
-        .slideImg
-            width: 100%
-            img
+        padding: 10px 10px
+        .slideInner
+            background: #323232
+            .slideContent
+                display: flex
+                flex-direction: column
+                align-items: center
+                padding: 10px 0
+                h2
+                    font-size: 1.25em
+            .slideImg
                 width: 100%
-                height: auto
+                img
+                    width: 100%
+                    height: auto
         @media screen and (max-width: 768px)
             margin: 0

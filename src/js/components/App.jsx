@@ -15,13 +15,16 @@ class Content extends Component {
                     width: '100%',
                     display: 'block'
                 }}></div>
-                <div className={classNames('section', sectionIndex & 1 ? 'darken' : 'lighten')} id={`section${sectionIndex++}`}>
+                <div style={{
+                    position: 'relative',
+                    padding: '0 0 20px 0',
+                    overflow: 'hidden'
+                }}
+                className={classNames('section bg_section', sectionIndex & 1 ? 'darken' : 'lighten')} id={`section${sectionIndex++}`}>
+                    <Containers.Movie/>
                     <div className="sectionTitle">
-                        <h1>清大行動家</h1>
-                        <p></p>
                     </div>
                     <div className="sectionContent">
-                        <Containers.Movie/>
                     </div>
                 </div>
                 <div className={classNames('section', sectionIndex & 1 ? 'darken' : 'lighten')} id={`section${sectionIndex++}`}>

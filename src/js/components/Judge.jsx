@@ -50,7 +50,8 @@ export default CSSModules(class extends Component {
             slidesToScroll: 1,
             responsive: [
                 { breakpoint: 768, settings: { slidesToShow: 1 } },
-                { breakpoint: 1024, settings: { slidesToShow: 3, slidesToScroll: 3 } }
+                { breakpoint: 1024, settings: { slidesToShow: 3, slidesToScroll: 3 } },
+                { breakpoint: 111111, settings: { slidesToShow: 3, slidesToScroll: 3 } }
             ]
         }
 
@@ -60,13 +61,15 @@ export default CSSModules(class extends Component {
                     {
                         this.state.JudgeList.map((ele, id) => (
                             <div className="slide">
-                                <div className="slideImg">
-                                    <img src={ele.img_link} />
-                                </div>
-                                <div className="slideContent">
-                                    <h1> {ele.name} </h1>
-                                    <h2> {ele.mention} </h2>
-                                    <h2> {ele.mention2} </h2>
+                                <div className="slideInner">
+                                    <div className="slideImg">
+                                        <img src={ele.img_link} />
+                                    </div>
+                                    <div className="slideContent">
+                                        <h1> {ele.name} </h1>
+                                        <h2> {ele.mention} </h2>
+                                        <h2> {ele.mention2} </h2>
+                                    </div>
                                 </div>
                             </div>
                         ))

@@ -11,7 +11,7 @@ $nthu_color = #7361AF
         background: lighten($nthu_color, 50%)
     &.darken
         color white
-        background: darken($nthu_color, 50%)
+        background: darken($nthu_color, 30%)
     .sectionTitle
         position: relative
         display: inline-block
@@ -33,6 +33,10 @@ $nthu_color = #7361AF
         height: auto
         width: 100%
         position: relative
+.bg_section
+    .sectionTitle
+        &:before
+            display: none
 .sm_section
     min-height: 250px
     height: 30vh

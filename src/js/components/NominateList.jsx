@@ -32,9 +32,11 @@ export default CSSModules(class extends Component {
                         this.props.NominateList.map((ele, id) => (
                                 ele[this.state.filter]
                                 ? <li key={id}>
-                                    <div>Name: {ele.name}</div>
-                                    <div>Name: {ele.intro}</div>
-                                    <img className="Nimg" src={ele.photo} />
+                                    <div> {ele.name} </div>
+                                    <div> {ele.intro} </div>
+                                    <div className="imgWrapper">
+                                        <img className="Nimg" src={ele.photo} />
+                                    </div>
                                 </li> : null
                             )
                         )

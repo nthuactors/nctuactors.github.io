@@ -14,7 +14,7 @@ export default CSSModules(class extends Component {
                     <ul>
                         <li>
                             <div className="IconImg">
-                                <img src="http://i.imgur.com/keURKK4.png"/>
+                                <img src="https://nthuactors.github.io/src/js/components/img/interview.png"/>
                             </div>
                             <div className="IconBrief">
                                 訪談故事撰寫
