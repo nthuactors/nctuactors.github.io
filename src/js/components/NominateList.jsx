@@ -23,8 +23,8 @@ export default CSSModules(class extends Component {
         return (
             <div className="NominateContainer">
                 <div className="filterBox">
-                    <div onClick={() => { this.changeFilter('first') } }>初賽名單</div>
-                    <div onClick={() => { this.changeFilter('last') } }>最後入圍</div>
+                    <div onClick={() => { this.changeFilter('first') } }>推薦名單</div>
+                    <div onClick={() => { this.changeFilter('last') } }>最終名單</div>
                 </div>
                 <div className="peopleBox">
                     <ul>
