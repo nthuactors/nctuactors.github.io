@@ -14,7 +14,7 @@ export default CSSModules(class extends Component {
                     <ul>
                         <li>
                             <div className="IconImg">
-                                <img src="http://i.imgur.com/XV8SdT5.png"/>
+                                <img src="https://nthuactors.github.io/src/js/components/img/stroke/nature.png"/>
                             </div>
                             <div className="IconBrief">
                                 環境生態
@@ -22,7 +22,7 @@ export default CSSModules(class extends Component {
                         </li>
                         <li>
                             <div className="IconImg">
-                                <img src="http://i.imgur.com/11eHyjm.png"/>
+                                <img src="https://nthuactors.github.io/src/js/components/img/stroke/light.png"/>
                             </div>
                             <div className="IconBrief">
                                 產業創新
@@ -30,7 +30,7 @@ export default CSSModules(class extends Component {
                         </li>
                         <li>
                             <div className="IconImg">
-                                <img src="http://i.imgur.com/DfzHrx1.png"/>
+                                <img src="https://nthuactors.github.io/src/js/components/img/stroke/animal.png"/>
                             </div>
                             <div className="IconBrief">
                                 人文藝術
@@ -38,7 +38,7 @@ export default CSSModules(class extends Component {
                         </li>
                         <li>
                             <div className="IconImg">
-                                <img src="http://i.imgur.com/DNJOjR6.png"/>
+                                <img src="https://nthuactors.github.io/src/js/components/img/stroke/home.png"/>
                             </div>
                             <div className="IconBrief">
                                 在地經營
@@ -46,7 +46,7 @@ export default CSSModules(class extends Component {
                         </li>
                         <li>
                             <div className="IconImg">
-                                <img src="http://i.imgur.com/uqsODxJ.png"/>
+                                <img src="https://nthuactors.github.io/src/js/components/img/stroke/agenda.png"/>
                             </div>
                             <div className="IconBrief">
                                 教育紮根

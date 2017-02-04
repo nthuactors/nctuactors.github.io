@@ -14,7 +14,7 @@ export default CSSModules(class extends Component {
                     <ul>
                         <li>
                             <div className="IconImg">
-                                <img src="https://nthuactors.github.io/src/js/components/img/in.png"/>
+                                <img src="https://nthuactors.github.io/src/js/components/img/stroke/karaoke.png"/>
                             </div>
                             <div className="IconBrief">
                                 訪談故事撰寫
@@ -22,7 +22,7 @@ export default CSSModules(class extends Component {
                         </li>
                         <li>
                             <div className="IconImg">
-                                <img src="http://i.imgur.com/Q5AwnDc.png"/>
+                                <img src="https://nthuactors.github.io/src/js/components/img/stroke/movie.png"/>
                             </div>
                             <div className="IconBrief">
                                 短篇影音紀錄
@@ -30,7 +30,7 @@ export default CSSModules(class extends Component {
                         </li>
                         <li>
                             <div className="IconImg">
-                                <img src="http://i.imgur.com/pUp6Opi.png"/>
+                                <img src="https://nthuactors.github.io/src/js/components/img/stroke/book.png"/>
                             </div>
                             <div className="IconBrief">
                                 故事蒐集成冊

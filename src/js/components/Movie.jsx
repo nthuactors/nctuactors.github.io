@@ -8,7 +8,7 @@ export default CSSModules(class extends Component {
             <div className="MovieContainers">
                 <div className="video-background">
                     <div className="video-foreground">
-                        <iframe src="https://www.youtube.com/embed/VqbR0BrS-08?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=VqbR0BrS-08" frameborder="0" allowfullscreen></iframe>
+                        {/* <iframe src="https://www.youtube.com/embed/VqbR0BrS-08?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=VqbR0BrS-08" frameborder="0" allowfullscreen></iframe> */}
                     </div>
                 </div>
             </div>
