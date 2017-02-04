@@ -1,21 +1,46 @@
 .submitIntro
     height: 100%
     display: flex
-    background-image: url("https://nthuactors.github.io/src/js/components/img/bg/single.jpg")
+    background-image: url("https://nthuactors.github.io/src/js/components/img/bg/multi.jpg")
     background-repeat: no-repeat
     background-position: center center
     background-size: cover
+    position: relative
     flex-direction: column
     justify-content: center
     align-items: center
+    &:after
+        content: ''
+        background: rgba(#FFF,0.35)
+        width: 100%
+        height: 100%
+        z-index: 1
+        position: absolute
     .submittext
+        display: flex
+        flex-direction: column
+        align-items: center
+        font-style: italic
+        z-index: 10
         margin: 15px 0
         line-height: 1.5
+        p
+            color: #202020
+            text-shadow: 1px 1px 5px darken(#AAA, 25%)
+            text-align: center
+            font-size: 1.75em
     .submitBtn
+        z-index: 10
         border-radius: 5px
-        background: #0AF
+        background: #7361af //7CEECE, 7361af
+        border: 3px solid darken(#7361af, 25%)
         color: white
-        padding: 10px 15px
+        padding: 10px 25px
         cursor: pointer
+        box-shadow: 1px 1px 5px darken(#50514F, 25%)
         a
+            letter-spacing: 3px
+            font-size: 1.25em
             color: white
+    @media screen and (max-width: 1024px)
+        padding: 20px 20px

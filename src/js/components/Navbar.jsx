@@ -24,7 +24,7 @@ export default CSSModules(class extends Component {
         const expand = {
             active: this.state.navExpand
         }
-        const navItem = ['清大行動家', '計畫簡介', '推薦名單', '計畫執行', '推薦表單', '評審團隊', '計畫時程', '主辦單位']
+        const navItem = ['清華築夢者', '計畫簡介', '推薦名單', '計畫執行', '推薦表單', '評審團隊', '計畫時程', '主辦單位']
         return (
             <nav id="nav" ref="nav">
                 <div className={classNames('menu-btn', 'nav-menu', expand)} onClick={this.toggleMenu}></div>
