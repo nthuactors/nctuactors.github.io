@@ -35,9 +35,11 @@ class Content extends Component {
                     <div style={{
                         width: '75%',
                         minWidth: '600px',
-                        minHeight: '500px',
+                        minHeight: '600px',
+                        maxHeight: '1500px',
                         '@media screen and (maxWidth: 1024px)': {
-                            width: '100%'
+                            width: '100%',
+                            maxHeight: 'auto'
                         }
                     }}
                     className="sectionContent">
@@ -85,7 +87,10 @@ class Content extends Component {
                         <Containers.PlainSchedule/>
                     </div>
                 </div>
-                <div className={classNames('sm_section', sectionIndex & 1 ? 'darken' : 'lighten')} id={`section${sectionIndex++}`}>
+                <div className={classNames('sm_section', sectionIndex & 1 ? 'darken' : 'lighten')} id={`section${sectionIndex++}`}
+                    style={{
+                        minHeight: '150px'
+                    }}>
                     <div style={{
                         display: 'none'
                     }}

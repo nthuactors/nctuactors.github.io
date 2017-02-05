@@ -36,8 +36,8 @@ export default CSSModules(class extends Component {
                     {
                         this.props.NominateList.map((ele, id) => (
                                 ele[this.state.filter]
-                                ? <li key={id} onClick={() => { this.showMore(id) } }>
-                                    <div className="listContain">
+                                ? <li key={id} >
+                                    <div className="listContain" onClick={() => { this.showMore(id) } }>
                                         <div className="textWrapper">
                                             <div> {ele.intro} </div>
                                             <div> {ele.name} </div>

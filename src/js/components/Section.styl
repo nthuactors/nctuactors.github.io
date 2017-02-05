@@ -1,4 +1,5 @@
 $nthu_color = #7361AF
+$black = #50514F
 .section
     width: 100%
     min-height: calc(100vh - 50px)
@@ -9,10 +10,18 @@ $nthu_color = #7361AF
     overflow: hidden
     &.lighten
         background: #DDD //lighten($nthu_color, 50%)
+        .sectionTitle
+            h1
+                color: $black
+            &:before
+                background: $black
     &.darken
         color white
         // background: darken($nthu_color, 30%)
-        background-image: url("https://nthuactors.github.io/src/js/components/img/bg/purple-bg.png")
+        background-image: url("https://nthuactors.github.io/src/js/components/img/bg/night4.jpg")
+        background-position: center center
+        background-repeat: no-repeat
+        background-size: cover
     .sectionTitle
         position: relative
         display: inline-block
