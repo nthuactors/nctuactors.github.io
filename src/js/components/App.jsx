@@ -3,6 +3,7 @@ import Containers from 'containers'
 import Radium, { StyleRoot } from 'radium'
 import CSSModules from 'react-css-modules'
 import classNames from 'classnames'
+require('sweetalert/dist/sweetalert.css')
 
 class Content extends Component {
     render () {

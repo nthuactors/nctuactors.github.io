@@ -1,12 +1,14 @@
 import React, { Component } from 'react'
 import CSSModules from 'react-css-modules'
 import Radium from 'radium'
+import swal from 'sweetalert'
 
 @Radium
 export default CSSModules(class extends Component {
     constructor (props) {
         super(props)
         this.changeFilter = this.changeFilter.bind(this)
+        this.showMore = this.showMore.bind(this)
         this.state = {
             filter: 'first'
         }
@@ -16,6 +18,9 @@ export default CSSModules(class extends Component {
             filter
         })
     }
+    showMore (id) {
+        swal(this.props.NominateList[id].introduction)
+    }
     componentDidMount () {
         this.props.getNominate()
     }
@@ -23,15 +28,15 @@ export default CSSModules(class extends Component {
         return (
             <div className="NominateContainer">
                 <div className="filterBox">
-                    <div onClick={() => { this.changeFilter('first') } }>初賽名單</div>
-                    <div onClick={() => { this.changeFilter('last') } }>最後入圍</div>
+                    <div onClick={() => { this.changeFilter('first') } }>推薦名單</div>
+                    <div onClick={() => { this.changeFilter('last') } }>最終名單</div>
                 </div>
                 <div className="peopleBox">
                     <ul>
                     {
                         this.props.NominateList.map((ele, id) => (
                                 ele[this.state.filter]
-                                ? <li key={id}>
+                                ? <li key={id} onClick={() => { this.showMore(id) } }>
                                     <div> {ele.name} </div>
                                     <div> {ele.intro} </div>
                                     <div className="imgWrapper">
