@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import CSSModules from 'react-css-modules'
+import ReactSVG from 'react-svg'
 
 export default CSSModules(class extends Component {
     render () {
@@ -14,7 +15,12 @@ export default CSSModules(class extends Component {
                     <ul>
                         <li>
                             <div className="IconImg">
-                                <img src="https://nthuactors.github.io/src/js/components/img/stroke/nature.png"/>
+                                <ReactSVG
+                                    path="https://nthuactors.github.io/src/js/components/img/nature.svg"
+                                    className="svgItem"
+                                    style={{
+                                    }}
+                                />
                             </div>
                             <div className="IconBrief">
                                 環境生態
@@ -22,7 +28,12 @@ export default CSSModules(class extends Component {
                         </li>
                         <li>
                             <div className="IconImg">
-                                <img src="https://nthuactors.github.io/src/js/components/img/stroke/light.png"/>
+                                <ReactSVG
+                                    path="https://nthuactors.github.io/src/js/components/img/technology.svg"
+                                    className="svgItem"
+                                    style={{
+                                    }}
+                                />
                             </div>
                             <div className="IconBrief">
                                 產業創新
@@ -30,7 +41,12 @@ export default CSSModules(class extends Component {
                         </li>
                         <li>
                             <div className="IconImg">
-                                <img src="https://nthuactors.github.io/src/js/components/img/stroke/animal.png"/>
+                                <ReactSVG
+                                    path="https://nthuactors.github.io/src/js/components/img/animal.svg"
+                                    className="svgItem"
+                                    style={{
+                                    }}
+                                />
                             </div>
                             <div className="IconBrief">
                                 人文藝術
@@ -38,7 +54,12 @@ export default CSSModules(class extends Component {
                         </li>
                         <li>
                             <div className="IconImg">
-                                <img src="https://nthuactors.github.io/src/js/components/img/stroke/home.png"/>
+                                <ReactSVG
+                                    path="https://nthuactors.github.io/src/js/components/img/home.svg"
+                                    className="svgItem"
+                                    style={{
+                                    }}
+                                />
                             </div>
                             <div className="IconBrief">
                                 在地經營
@@ -46,7 +67,12 @@ export default CSSModules(class extends Component {
                         </li>
                         <li>
                             <div className="IconImg">
-                                <img src="https://nthuactors.github.io/src/js/components/img/stroke/agenda.png"/>
+                                <ReactSVG
+                                    path="https://nthuactors.github.io/src/js/components/img/agenda.svg"
+                                    className="svgItem"
+                                    style={{
+                                    }}
+                                />
                             </div>
                             <div className="IconBrief">
                                 教育紮根

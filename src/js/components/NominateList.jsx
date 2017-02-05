@@ -37,10 +37,18 @@ export default CSSModules(class extends Component {
                         this.props.NominateList.map((ele, id) => (
                                 ele[this.state.filter]
                                 ? <li key={id} onClick={() => { this.showMore(id) } }>
-                                    <div> {ele.name} </div>
-                                    <div> {ele.intro} </div>
-                                    <div className="imgWrapper">
-                                        <img className="Nimg" src={ele.photo} />
+                                    <div className="listContain">
+                                        <div className="textWrapper">
+                                            <div> {ele.intro} </div>
+                                            <div> {ele.name} </div>
+                                        </div>
+                                        <div className="imgWrapper"
+                                            style={{
+                                                backgroundImage: `url("{ele.photo}")`
+                                            }}
+                                        >
+                                            <img className="Nimg" src={ele.photo} />
+                                        </div>
                                     </div>
                                 </li> : null
                             )
