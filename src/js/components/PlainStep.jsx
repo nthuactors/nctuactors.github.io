@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import CSSModules from 'react-css-modules'
+import ReactSVG from 'react-svg'
 
 export default CSSModules(class extends Component {
     render () {
@@ -13,27 +14,48 @@ export default CSSModules(class extends Component {
                 <div className="StepList">
                     <ul>
                         <li>
-                            <div className="IconImg">
-                                <img src="https://nthuactors.github.io/src/js/components/img/stroke/karaoke.png"/>
-                            </div>
-                            <div className="IconBrief">
-                                訪談故事撰寫
+                            <div className="IconContain">
+                                <div className="IconImg">
+                                    <ReactSVG
+                                        path="https://nthuactors.github.io/src/js/components/img/karaoke.svg"
+                                        className="svgItem"
+                                        style={{
+                                        }}
+                                    />
+                                </div>
+                                <div className="IconBrief">
+                                    訪談故事撰寫
+                                </div>
                             </div>
                         </li>
                         <li>
-                            <div className="IconImg">
-                                <img src="https://nthuactors.github.io/src/js/components/img/stroke/movie.png"/>
-                            </div>
-                            <div className="IconBrief">
-                                短篇影音紀錄
+                            <div className="IconContain">
+                                <div className="IconImg">
+                                    <ReactSVG
+                                        path="https://nthuactors.github.io/src/js/components/img/technology-1.svg"
+                                        className="svgItem"
+                                        style={{
+                                        }}
+                                    />
+                                </div>
+                                <div className="IconBrief">
+                                    短篇影音紀錄
+                                </div>
                             </div>
                         </li>
                         <li>
-                            <div className="IconImg">
-                                <img src="https://nthuactors.github.io/src/js/components/img/stroke/book.png"/>
-                            </div>
-                            <div className="IconBrief">
-                                故事蒐集成冊
+                            <div className="IconContain">
+                                <div className="IconImg">
+                                    <ReactSVG
+                                        path="https://nthuactors.github.io/src/js/components/img/book.svg"
+                                        className="svgItem"
+                                        style={{
+                                        }}
+                                    />
+                                </div>
+                                <div className="IconBrief">
+                                    故事蒐集成冊
+                                </div>
                             </div>
                         </li>
                     </ul>

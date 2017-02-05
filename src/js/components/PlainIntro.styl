@@ -1,9 +1,8 @@
 $tiffeny = lighten(#7CEECE, 10%)
 .PlainIntro
-    position: absolute
-    top: 10%
-    left: 0%
+    position: relative
     width: 100%
+    max-width: 768px
     height: auto
     display: flex
     flex-direction: column
@@ -12,7 +11,7 @@ $tiffeny = lighten(#7CEECE, 10%)
     @media screen and (max-width: 768px)
         position: relative
     .PlainText
-        margin: 0 10%
+        // margin: 0 10%
         p
             font-size: 1.5em
             font-weight: 300

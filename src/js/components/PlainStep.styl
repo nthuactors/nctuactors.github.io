@@ -1,6 +1,7 @@
+$tiffeny = lighten(#7CEECE, 10%)
 .StepIntro
     position: absolute
-    top: 15%
+    // top: 15%
     left: 0%
     width: 100%
     height: auto
@@ -20,7 +21,7 @@
             align-items: center
             width: 100%
             li
-                background: #92CCE1
+                background: transparent
                 width: calc(33% - 10px)
                 min-height: 25vw
                 display: flex
@@ -28,17 +29,29 @@
                 align-items: center
                 justify-content: center
                 padding: 10px 0
-                .IconImg
-                    width: 80%
-                    height: 80%
-                    img
-                        width: 100%
-                        height: 100%
-                .IconBrief
-                    margin-top: 10px
+                .IconContain
+                    width: 200px
+                    height: 200px
+                    border: 3px solid $tiffeny
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    justify-content: center
+                    border-radius: 50%
+                    .IconImg
+                        width: 50%
+                        height: 50%
+                        img
+                            width: 100%
+                            height: auto
+                        .svgItem
+                            stroke: $tiffeny
+                            fill: $tiffeny
+                    .IconBrief
+                        margin-top: 10px
             @media screen and (max-width: 768px)
                 flex-wrap: wrap
                 li
-                    min-height: 50vw
+                    min-height: 30vw
                     width: calc(90% - 10px)
                     margin: 5px 0

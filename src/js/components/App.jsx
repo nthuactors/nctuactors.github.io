@@ -33,14 +33,18 @@ class Content extends Component {
                         <h1>計畫簡介</h1>
                     </div>
                     <div style={{
-                        width: '75%',
-                        minWidth: '600px',
-                        minHeight: '600px',
-                        maxHeight: '1500px',
-                        '@media screen and (maxWidth: 1024px)': {
-                            width: '100%',
-                            maxHeight: 'auto'
-                        }
+                        display: 'flex',
+                        flexDirection: 'column',
+                        alignItems: 'center'
+                        // width: '75%',
+                        // minWidth: '100%',
+                        // maxWidth: '1024px',
+                        // minHeight: '600px',
+                        // maxHeight: '1500px',
+                        // '@media screen and (maxWidth: 1024px)': {
+                        //     width: '100%',
+                        //     maxHeight: 'auto'
+                        // }
                     }}
                     className="sectionContent">
                         <Containers.PlainIntro/>
