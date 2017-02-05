@@ -54,7 +54,9 @@ export default CSSModules(class extends Component {
                 { breakpoint: 111111, settings: { slidesToShow: 3, slidesToScroll: 1 } }
             ],
             autoplay: true,
-            autoplaySpeed: 1500
+            autoplaySpeed: 3000,
+            pauseOnHover: true
+            // fade: true
         }
 
         return (
