@@ -12,7 +12,7 @@ class Content extends Component {
             <div>
                 <Containers.Navbar/>
                 <div style={{
-                    height: '50px',
+                    height: '60px',
                     width: '100%',
                     display: 'block'
                 }}></div>
