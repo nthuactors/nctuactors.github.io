@@ -1,7 +1,31 @@
 import React, { Component } from 'react'
 import CSSModules from 'react-css-modules'
+import ReactSVG from 'react-svg'
 
 export default CSSModules(class extends Component {
+    constructor (props) {
+        super(props)
+        this.state = {
+            Schedule_List: [
+                {
+                    'img_link': 'https://nthuactors.github.io/src/js/components/img/hourglass.svg',
+                    'brief': '第一階段唷',
+                    'mention': '2/14',
+                    'mention2': '提名截止'
+                }, {
+                    'img_link': 'https://nthuactors.github.io/src/js/components/img/list.svg',
+                    'brief': '我是第二階段',
+                    'mention': '3/6',
+                    'mention2': '第一階段書審'
+                }, {
+                    'img_link': 'https://nthuactors.github.io/src/js/components/img/favorites.svg',
+                    'brief': '恭喜大家上榜',
+                    'mention': '4/15',
+                    'mention2': '未來大人物'
+                }
+            ]
+        }
+    }
     render () {
         return (
             <div className="ScheduleIntro">
@@ -12,42 +36,30 @@ export default CSSModules(class extends Component {
                 </div>
                 <div className="ScheduleList">
                     <ul>
-                        <li>
-                            <div className="timeInfo">
-                                <div className="IconImg">
-                                    <img src="https://nthuactors.github.io/src/js/components/img/hourglass.png"/>
-                                </div>
-                                <div className="IconBrief">
-                                    提名截止
-                                </div>
-                            </div>
-                            <div className="pointArrow">
-                                <img src="https://nthuactors.github.io/src/js/components/img/right-arrow.png" />
-                            </div>
-                        </li>
-                        <li>
-                            <div className="timeInfo">
-                                <div className="IconImg">
-                                    <img src="https://nthuactors.github.io/src/js/components/img/notebook.png"/>
-                                </div>
-                                <div className="IconBrief">
-                                    第一階段書審
-                                </div>
-                            </div>
-                            <div className="pointArrow">
-                                <img src="https://nthuactors.github.io/src/js/components/img/right-arrow.png" />
-                            </div>
-                        </li>
-                        <li>
-                            <div className="timeInfo">
-                                <div className="IconImg">
-                                    <img src="https://nthuactors.github.io/src/js/components/img/star.png"/>
-                                </div>
-                                <div className="IconBrief">
-                                    未來大人物
-                                </div>
-                            </div>
-                        </li>
+                        {
+                            this.state.Schedule_List.map((ele, id) => (
+                                <li>
+                                    <div className="timeInfo">
+                                        <div className="IconImg">
+                                            <ReactSVG
+                                                path={ele.img_link}
+                                                className="svgItem"
+                                            />
+                                        </div>
+                                        <div className="IconTime">
+                                            <h1>{ele.mention}</h1>
+                                            <h1>{ele.mention2}</h1>
+                                        </div>
+                                        <div className="IconBrief">
+                                            {ele.brief}
+                                        </div>
+                                    </div>
+                                    <div className="pointArrow">
+                                        <img src="https://nthuactors.github.io/src/js/components/img/right-arrow.png" />
+                                    </div>
+                                </li>
+                            ))
+                        }
                     </ul>
                 </div>
             </div>
