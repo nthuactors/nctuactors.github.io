@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Radium from 'radium'
 import CSSModules from 'react-css-modules'
 import classNames from 'classnames'
-var Scroll = require('react-scroll')
+import { scroller } from 'react-scroll'
 
 @Radium
 export default CSSModules(class extends Component {
@@ -26,7 +26,7 @@ export default CSSModules(class extends Component {
             navExpand: false
         })
         let delay = this.state.navExpand ? 350 : 0
-        Scroll.scroller.scrollTo(scrollto, {
+        scroller.scrollTo(scrollto, {
             delay: delay,
             duration: 500,
             smooth: true,
