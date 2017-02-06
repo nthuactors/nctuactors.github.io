@@ -36,15 +36,6 @@ class Content extends Component {
                         display: 'flex',
                         flexDirection: 'column',
                         alignItems: 'center'
-                        // width: '75%',
-                        // minWidth: '100%',
-                        // maxWidth: '1024px',
-                        // minHeight: '600px',
-                        // maxHeight: '1500px',
-                        // '@media screen and (maxWidth: 1024px)': {
-                        //     width: '100%',
-                        //     maxHeight: 'auto'
-                        // }
                     }}
                     className="sectionContent">
                         <Containers.PlainIntro/>
@@ -79,7 +70,11 @@ class Content extends Component {
                     <div className="sectionTitle">
                         <h1>評審團隊</h1>
                     </div>
-                    <div className="sectionContent">
+                    <div style={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        alignItems: 'center'
+                    }} className="sectionContent">
                         <Containers.Judge/>
                     </div>
                 </div>
