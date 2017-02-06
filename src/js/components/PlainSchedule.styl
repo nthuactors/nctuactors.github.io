@@ -27,7 +27,7 @@ $tiffeny = lighten(#7CEECE, 20%)
                 // background: #92CCE1
                 width: calc(33% - 10px)
                 .timeInfo
-                    background: $tiffeny
+                    background: #FFF//$tiffeny
                     width: calc(85% - 10px)
                     min-height: 25vw
                     display: flex
@@ -48,10 +48,9 @@ $tiffeny = lighten(#7CEECE, 20%)
                         text-align: center
                         margin-top: 10px
                         h1
-                            &:nth-child(1)
-                                font-weight: bolder
+                            font-weight: bolder
                             margin: 0
-                            line-height: 1
+                            line-height: 1.2
                             font-size: 1.5em
                     .IconBrief
                         margin-top: 10px
@@ -71,6 +70,6 @@ $tiffeny = lighten(#7CEECE, 20%)
             @media screen and (max-width: 768px)
                 flex-wrap: wrap
                 li
-                    min-height: 50vw
+                    min-height: 30vw
                     width: calc(90% - 10px)
                     margin: 5px 0

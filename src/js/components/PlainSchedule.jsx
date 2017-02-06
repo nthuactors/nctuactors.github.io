@@ -8,17 +8,17 @@ export default CSSModules(class extends Component {
         this.state = {
             Schedule_List: [
                 {
-                    'img_link': 'https://nthuactors.github.io/src/js/components/img/hourglass.svg',
+                    'img_link': 'https://nthuactors.github.io/src/js/components/img/karaoke.svg',
                     'brief': '第一階段唷',
                     'mention': '2/14',
                     'mention2': '提名截止'
                 }, {
-                    'img_link': 'https://nthuactors.github.io/src/js/components/img/list.svg',
+                    'img_link': 'https://nthuactors.github.io/src/js/components/img/book.svg',
                     'brief': '我是第二階段',
                     'mention': '3/6',
                     'mention2': '第一階段書審'
                 }, {
-                    'img_link': 'https://nthuactors.github.io/src/js/components/img/favorites.svg',
+                    'img_link': 'https://nthuactors.github.io/src/js/components/img/animal.svg',
                     'brief': '恭喜大家上榜',
                     'mention': '4/15',
                     'mention2': '未來大人物'
