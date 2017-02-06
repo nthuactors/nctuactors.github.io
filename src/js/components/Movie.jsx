@@ -1,14 +1,34 @@
 import React, { Component } from 'react'
 import CSSModules from 'react-css-modules'
-// import YouTube from 'react-youtube'
-// import ReactPlayer from 'react-player'
+import YouTube from 'react-youtube'
+
 export default CSSModules(class extends Component {
+    _onReady (event) {
+        event.target.mute()
+    }
     render () {
+        const opts = {
+            playerVars: {
+                autoplay: 1,
+                controls: 0,
+                autohide: 1,
+                loop: 1,
+                showinfo: 0,
+                modestbranding: 0,
+                playlist: 'VqbR0BrS-08',
+                disablekb: 1
+            }
+        }
+
         return (
             <div className="MovieContainers">
                 <div className="video-background">
                     <div className="video-foreground">
-                        {/* <iframe src="https://www.youtube.com/embed/VqbR0BrS-08?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=VqbR0BrS-08" frameborder="0" allowfullscreen></iframe> */}
+                        <YouTube
+                            videoId="VqbR0BrS-08"
+                            opts={opts}
+                            onReady={this._onReady}
+                            />
                     </div>
                 </div>
             </div>
