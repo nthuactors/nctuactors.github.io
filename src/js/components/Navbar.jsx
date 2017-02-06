@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import Radium from 'radium'
 import CSSModules from 'react-css-modules'
-import { Link } from 'react-scroll'
 import classNames from 'classnames'
+var Scroll = require('react-scroll')
 
 @Radium
 export default CSSModules(class extends Component {
@@ -11,6 +11,7 @@ export default CSSModules(class extends Component {
     constructor (props) {
         super(props)
         this.toggleMenu = this.toggleMenu.bind(this)
+        this.handleClick = this.handleClick.bind(this)
         this.state = {
             navExpand: false
         }
@@ -18,6 +19,19 @@ export default CSSModules(class extends Component {
     toggleMenu () {
         this.setState({
             navExpand: !this.state.navExpand
+        })
+    }
+    handleClick (scrollto) {
+        this.setState({
+            navExpand: false
+        })
+        let delay = this.state.navExpand ? 350 : 0
+        Scroll.scroller.scrollTo(scrollto, {
+            delay: delay,
+            duration: 500,
+            smooth: true,
+            activeClass: 'active',
+            offset: -60
         })
     }
     render () {
@@ -34,7 +48,7 @@ export default CSSModules(class extends Component {
                 <div className={classNames('nav-list', expand)}>
                     {
                         navItem.map((ele, id) => (
-                            <Link key={id} activeClass="active" spy={true} to={`section${id}`} offset={-60} smooth={true} duration={500} href="#">{ele}</Link>
+                            <a key={id} onClick={ () => { this.handleClick(`section${id}`) } } >{ele}</a>
                         ))
                     }
                 </div>
