@@ -7,7 +7,7 @@ export default CSSModules(class extends Component {
             <div className="Footer">
                 <div className="FooterText">
                     <p>
-                        清華精神：「厚德載物，自強不息」。我們希望透過此計畫，讓行動得以傳承，改變得以蔓延。
+                        築夢不能只有踏實，更需要你的看見
                     </p>
                 </div>
                 <div className="FooterMedia">
@@ -18,15 +18,17 @@ export default CSSModules(class extends Component {
                             </div>
                         </li>
                         <li>
-                            <div className="IconImg">
-                                <img src="https://nthuactors.github.io/src/js/components/img/web.png"/>
-                            </div>
+                            <a href="mailto:celia.chen@iss.nthu.edu.tw">
+                                <div className="IconImg">
+                                    <img src="https://nthuactors.github.io/src/js/components/img/web.png"/>
+                                </div>
+                            </a>
                         </li>
-                        <li>
+                        {/* <li>
                             <div className="IconImg">
                                 <img src="https://nthuactors.github.io/src/js/components/img/social-1.png"/>
                             </div>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
             </div>
