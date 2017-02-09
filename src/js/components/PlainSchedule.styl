@@ -1,4 +1,4 @@
-$tiffeny = lighten(#7CEECE, 20%)
+$tiffeny = darken(#7CEECE, 10%)
 .ScheduleIntro
     position: absolute
     top: 15%
@@ -20,6 +20,7 @@ $tiffeny = lighten(#7CEECE, 20%)
             justify-content: space-around
             align-items: center
             width: 100%
+            padding-left: 5%
             li
                 display: flex
                 align-items: center
@@ -27,7 +28,8 @@ $tiffeny = lighten(#7CEECE, 20%)
                 // background: #92CCE1
                 width: calc(33% - 10px)
                 .timeInfo
-                    background: #FFF//$tiffeny
+                    // background: #FFF//$tiffeny
+                    border: 3px solid #323232
                     width: calc(85% - 10px)
                     min-height: 25vw
                     display: flex
