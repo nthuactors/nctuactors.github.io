@@ -5,11 +5,6 @@ export default CSSModules(class extends Component {
     render () {
         return (
             <div className="Footer">
-                <div className="FooterText">
-                    <p>
-                        築夢不能只有踏實，更需要你的看見
-                    </p>
-                </div>
                 <div className="FooterMedia">
                     <ul>
                         <li>
@@ -30,6 +25,14 @@ export default CSSModules(class extends Component {
                             </div>
                         </li> */}
                     </ul>
+                </div>
+                <div className="FooterText">
+                    <p>
+                        築夢不能只有踏實，更需要你的看見
+                    </p>
+                    <p>
+                        Copyright © 2017 National Tsing Hua University ALL RIGHTS RESERVED.
+                    </p>
                 </div>
             </div>
         )
