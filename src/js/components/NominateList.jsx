@@ -23,7 +23,8 @@ export default CSSModules(class extends Component {
             title: this.props.NominateList[id].name,
             text: this.props.NominateList[id].introduction,
             imageUrl: this.props.NominateList[id].photo,
-            html: true
+            html: true,
+            allowOutsideClick: true
         })
         // swal(this.props.NominateList[id].introduction)
     }
