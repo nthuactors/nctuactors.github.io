@@ -19,7 +19,12 @@ export default CSSModules(class extends Component {
         })
     }
     showMore (id) {
-        swal(this.props.NominateList[id].introduction)
+        swal({
+            title: this.props.NominateList[id].name,
+            text: this.props.NominateList[id].introduction,
+            imageUrl: this.props.NominateList[id].photo
+        })
+        // swal(this.props.NominateList[id].introduction)
     }
     componentDidMount () {
         this.props.getNominate()
