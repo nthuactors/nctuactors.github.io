@@ -20,13 +20,28 @@ class Content extends Component {
                 <div style={{
                     position: 'relative',
                     padding: '0 0 20px 0',
-                    overflow: 'hidden'
+                    overflow: 'hidden',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
                 }}
                 className={classNames('section bg_section', sectionIndex & 1 ? 'darken' : 'lighten')} id={`section${sectionIndex++}`}>
                     <Containers.Movie/>
                     <div className="sectionTitle">
+                        <div className="logo-section"
+                            style={{
+                                width: '80%',
+                                height: 'auto'
+                            }}
+                        >
+                            <img src="https://nthuactors.github.io/src/js/components/img/logo.png"/>
+                        </div>
                     </div>
-                    <div className="sectionContent">
+                    <div className="sectionContent"
+                        style={{
+                            display: 'none'
+                        }}
+                    >
                     </div>
                 </div>
                 <div className={classNames('section', sectionIndex & 1 ? 'darken' : 'lighten')} id={`section${sectionIndex++}`}>

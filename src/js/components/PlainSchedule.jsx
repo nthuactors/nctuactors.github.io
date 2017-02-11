@@ -9,19 +9,24 @@ export default CSSModules(class extends Component {
             Schedule_List: [
                 {
                     'img_link': 'https://nthuactors.github.io/src/js/components/img/hourglass.svg',
-                    'brief': '第一階段唷',
-                    'mention': '2/14',
+                    'brief': '請把握時間提名',
+                    'mention': '2/28',
                     'mention2': '提名截止'
                 }, {
                     'img_link': 'https://nthuactors.github.io/src/js/components/img/list.svg',
-                    'brief': '我是第二階段',
-                    'mention': '3/6',
-                    'mention2': '第一階段書審'
+                    'brief': '',
+                    'mention': '3/01 ~ 3/17',
+                    'mention2': '築夢家蒐集資料'
                 }, {
                     'img_link': 'https://nthuactors.github.io/src/js/components/img/favorites.svg',
-                    'brief': '恭喜大家上榜',
-                    'mention': '4/15',
-                    'mention2': '未來大人物'
+                    'brief': '',
+                    'mention': '3/17 ~ 4/09',
+                    'mention2': '評審討論及決議'
+                }, {
+                    'img_link': 'https://nthuactors.github.io/src/js/components/img/favorites.svg',
+                    'brief': '24 位清華築夢家',
+                    'mention': '4/10',
+                    'mention2': '公布名單'
                 }
             ]
         }

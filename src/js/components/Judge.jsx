@@ -8,14 +8,14 @@ export default CSSModules(class extends Component {
         this.state = {
             JudgeList: [
                 {
-                    'img_link': 'https://nthuactors.github.io/src/js/components/img/p1.jpg',
-                    'name': 'Kathleen',
-                    'mention': 'blalabla',
-                    'mention2': 'blalabla'
+                    'img_link': 'https://nthuactors.github.io/src/js/components/img/judge/j1.jpg',
+                    'name': '張鐵志',
+                    'mention': '政治與文化評論家',
+                    'mention2': ' '
                 }, {
-                    'img_link': 'https://nthuactors.github.io/src/js/components/img/p2.jpeg',
-                    'name': 'Laura',
-                    'mention': 'blalabla',
+                    'img_link': 'https://nthuactors.github.io/src/js/components/img/judge/j2.jpg',
+                    'name': '劉月梅',
+                    'mention': '荒野保護協會理事長',
                     'mention2': 'blalabla'
                 }, {
                     'img_link': 'https://nthuactors.github.io/src/js/components/img/p3.jpeg',
