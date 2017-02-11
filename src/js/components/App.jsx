@@ -30,11 +30,18 @@ class Content extends Component {
                     <div className="sectionTitle">
                         <div className="logo-section"
                             style={{
-                                width: '80%',
-                                height: 'auto'
+                                width: '100%',
+                                height: 'auto',
+                                display: 'flex',
+                                justifyContent: 'center'
                             }}
                         >
-                            <img src="https://nthuactors.github.io/src/js/components/img/logo.png"/>
+                            <img src="https://nthuactors.github.io/src/js/components/img/logo.png"
+                                style={{
+                                    width: '70%',
+                                    height: '100%'
+                                }}
+                            />
                         </div>
                     </div>
                     <div className="sectionContent"

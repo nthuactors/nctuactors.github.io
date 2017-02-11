@@ -18,7 +18,8 @@ export default handleActions({
                 'introduction': ele[1],
                 'photo': ele[2],
                 'first': !!ele[3],
-                'last': !!ele[4]
+                'last': !!ele[4],
+                'brief': ele[5]
             }))
             return {
                 list

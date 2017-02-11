@@ -46,12 +46,17 @@ export default CSSModules(class extends Component {
                                 ? <li key={id} >
                                     <div className="listContain" onClick={() => { this.showMore(id) } }>
                                         <div className="textWrapper">
-                                            <div> {ele.intro} </div>
+                                            <div style={{
+                                                fontSize: '1em'
+                                            }}
+                                            >
+                                                {ele.brief}
+                                            </div>
                                             <div> {ele.name} </div>
                                         </div>
                                         <div className="imgWrapper"
                                             style={{
-                                                backgroundImage: `url("{ele.photo}")`
+                                                backgroundImage: ('url("' + ele.photo + '"') // (() => (k === 1 ? ele.photo : ele.photo))()
                                             }}
                                         >
                                             <img className="Nimg" src={ele.photo} />
