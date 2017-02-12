@@ -22,22 +22,23 @@ export default CSSModules(class extends Component {
                     'name': 'James',
                     'mention': 'blalabla',
                     'mention2': 'blalabla'
-                }, {
-                    'img_link': 'https://nthuactors.github.io/src/js/components/img/p4.jpeg',
-                    'name': 'Jeanette',
-                    'mention': 'blalabla',
-                    'mention2': 'blalabla'
-                }, {
-                    'img_link': 'https://nthuactors.github.io/src/js/components/img/p5.jpeg',
-                    'name': 'Santiago',
-                    'mention': 'blalabla',
-                    'mention2': 'blalabla'
-                }, {
-                    'img_link': 'https://nthuactors.github.io/src/js/components/img/p6.jpg',
-                    'name': 'Caroline',
-                    'mention': 'blalabla',
-                    'mention2': 'blalabla'
                 }
+                //, {
+                //     'img_link': 'https://nthuactors.github.io/src/js/components/img/p4.jpeg',
+                //     'name': 'Jeanette',
+                //     'mention': 'blalabla',
+                //     'mention2': 'blalabla'
+                // }, {
+                //     'img_link': 'https://nthuactors.github.io/src/js/components/img/p5.jpeg',
+                //     'name': 'Santiago',
+                //     'mention': 'blalabla',
+                //     'mention2': 'blalabla'
+                // }, {
+                //     'img_link': 'https://nthuactors.github.io/src/js/components/img/p6.jpg',
+                //     'name': 'Caroline',
+                //     'mention': 'blalabla',
+                //     'mention2': 'blalabla'
+                // }
             ]
         }
     }

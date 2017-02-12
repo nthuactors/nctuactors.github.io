@@ -18,7 +18,7 @@ export default CSSModules(class extends Component {
 
                 </div>
                 <div className="submitBtn">
-                    <a href="#">我要推薦</a>
+                    <a href="https://goo.gl/forms/dlIPwGjUAIKLs6kB2" target="_blank">我要推薦</a>
                 </div>
             </div>
         )

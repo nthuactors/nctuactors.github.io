@@ -52,7 +52,7 @@ export default CSSModules(class extends Component {
                                             />
                                         </div>
                                         <div className="IconTime">
-                                            <h1>{ele.mention}</h1>
+                                            <h1 className="time">{ele.mention}</h1>
                                             <h1>{ele.mention2}</h1>
                                         </div>
                                         <div className="IconBrief">

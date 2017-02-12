@@ -33,6 +33,8 @@ class Content extends Component {
                                 width: '100%',
                                 height: 'auto',
                                 display: 'flex',
+                                flexDirection: 'column',
+                                alignItems: 'center',
                                 justifyContent: 'center'
                             }}
                         >
@@ -42,6 +44,21 @@ class Content extends Component {
                                     height: '100%'
                                 }}
                             />
+                        <h3
+                            style={{
+                                marginTop: '10px',
+                                fontSize: '1.25em',
+                                color: 'white',
+                                opacity: '1'
+                            }}
+                        >築夢不能只有踏實，更需要你的看見</h3>
+                    <a href="https://goo.gl/forms/dlIPwGjUAIKLs6kB2" target="_blank"><div
+                        style={{
+                            padding: '10px 20px',
+                            border: '2px solid white',
+                            color: 'white'
+                        }}
+                    >立即推薦</div></a>
                         </div>
                     </div>
                     <div className="sectionContent"
