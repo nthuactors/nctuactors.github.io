@@ -38,7 +38,7 @@ class Content extends Component {
                                 justifyContent: 'center'
                             }}
                         >
-                            <img src="https://nthuactors.github.io/src/js/components/img/logo.png"
+                            <img src="https://nthuactors.github.io/src/js/components/img/logo1.png"
                                 style={{
                                     width: '70%',
                                     height: '100%'
