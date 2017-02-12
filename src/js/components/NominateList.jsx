@@ -21,7 +21,7 @@ export default CSSModules(class extends Component {
     showMore (id) {
         swal({
             title: this.props.NominateList[id].name,
-            text: this.props.NominateList[id].introduction,
+            text: (this.props.NominateList[id].long + this.props.NominateList[id].introduction),
             imageUrl: this.props.NominateList[id].photo,
             html: true,
             allowOutsideClick: true

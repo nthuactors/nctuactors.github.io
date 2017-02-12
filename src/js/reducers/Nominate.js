@@ -19,7 +19,8 @@ export default handleActions({
                 'photo': ele[2],
                 'first': !!ele[3],
                 'last': !!ele[4],
-                'brief': ele[5]
+                'brief': ele[5],
+                'long': ele[6]
             }))
             return {
                 list
