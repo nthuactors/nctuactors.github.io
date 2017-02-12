@@ -16,9 +16,9 @@ export default CSSModules(class extends Component {
                     'img_link': 'https://nthuactors.github.io/src/js/components/img/list.svg',
                     'brief': '',
                     'mention': '3/01 ~ 3/17',
-                    'mention2': '築夢家蒐集資料'
+                    'mention2': '築夢家資料蒐集'
                 }, {
-                    'img_link': 'https://nthuactors.github.io/src/js/components/img/favorites.svg',
+                    'img_link': 'https://nthuactors.github.io/src/js/components/img/judge.svg',
                     'brief': '',
                     'mention': '3/17 ~ 4/09',
                     'mention2': '評審討論及決議'
