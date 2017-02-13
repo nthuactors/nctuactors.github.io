@@ -16,7 +16,8 @@ export default CSSModules(class extends Component {
                 showinfo: 0,
                 modestbranding: 0,
                 playlist: 'VqbR0BrS-08',
-                disablekb: 1
+                disablekb: 1,
+                origin: 'https://nthuactors.github.io/dist/'
             }
         }
 

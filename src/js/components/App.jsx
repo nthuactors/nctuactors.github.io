@@ -41,13 +41,13 @@ class Content extends Component {
                             <img src="https://nthuactors.github.io/src/js/components/img/logo.png"
                                 style={{
                                     width: '70%',
-                                    height: '100%'
+                                    height: 'auto',
+                                    minWidth: '200px'
                                 }}
                             />
-                        <h3
+                        <h3 className="logoSubtext"
                             style={{
                                 margin: '15px 0',
-                                fontSize: '1.75em',
                                 color: 'white',
                                 opacity: '1'
                             }}
