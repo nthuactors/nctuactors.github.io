@@ -9,7 +9,7 @@ export default CSSModules(class extends Component {
             Schedule_List: [
                 {
                     'img_link': 'https://nthuactors.github.io/src/js/components/img/hourglass.svg',
-                    'brief': '請把握時間提名',
+                    'brief': '',
                     'mention': '2/28',
                     'mention2': '提名截止'
                 }, {
@@ -24,7 +24,7 @@ export default CSSModules(class extends Component {
                     'mention2': '評審討論及決議'
                 }, {
                     'img_link': 'https://nthuactors.github.io/src/js/components/img/favorites.svg',
-                    'brief': '24 位清華築夢家',
+                    'brief': '',
                     'mention': '4/10',
                     'mention2': '公布名單'
                 }

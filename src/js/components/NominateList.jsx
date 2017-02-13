@@ -49,10 +49,10 @@ export default CSSModules(class extends Component {
                                             <div style={{
                                                 fontSize: '1em'
                                             }}
-                                            >
-                                                {ele.brief}
+                                            ><div> {ele.name} </div>
+                                        <div className="subtext" dangerouslySetInnerHTML={{__html: ele.brief}} ></div>
+                                                {/* {ele.brief} */}
                                             </div>
-                                            <div> {ele.name} </div>
                                         </div>
                                         <div className="imgWrapper"
                                             style={{
