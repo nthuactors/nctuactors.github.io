@@ -17,6 +17,7 @@ export default CSSModules(class extends Component {
                 modestbranding: 0,
                 playlist: 'VqbR0BrS-08',
                 disablekb: 1,
+                enable: 'jsapi',
                 origin: 'https://nthuactors.github.io/dist/'
             }
         }
