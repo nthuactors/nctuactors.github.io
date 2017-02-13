@@ -46,8 +46,8 @@ class Content extends Component {
                             />
                         <h3
                             style={{
-                                marginTop: '10px',
-                                fontSize: '1.25em',
+                                margin: '15px 0',
+                                fontSize: '1.75em',
                                 color: 'white',
                                 opacity: '1'
                             }}
@@ -55,6 +55,7 @@ class Content extends Component {
                     <a href="https://goo.gl/forms/dlIPwGjUAIKLs6kB2" target="_blank"><div
                         style={{
                             padding: '10px 20px',
+                            fontSize: '1.35em',
                             border: '2px solid white',
                             color: 'white'
                         }}
