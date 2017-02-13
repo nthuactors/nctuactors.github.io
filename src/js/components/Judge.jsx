@@ -18,7 +18,7 @@ export default CSSModules(class extends Component {
                     'mention': '荒野保護協會理事長',
                     'mention2': ''
                 }, {
-                    'img_link': 'https://nthuactors.github.io/src/js/components/img/judge/jx.png',
+                    'img_link': 'https://nthuactors.github.io/src/js/components/img/judge/coming.png',
                     'name': '?',
                     'mention': '陸續邀請中',
                     'mention2': ''
