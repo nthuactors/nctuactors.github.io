@@ -48,18 +48,16 @@ export default CSSModules(class extends Component {
                                         <div className="textWrapper">
                                             <div style={{
                                                 fontSize: '1em'
-                                            }}
-                                            ><div> {ele.name} </div>
-                                        <div className="subtext" dangerouslySetInnerHTML={{__html: ele.brief}} ></div>
+                                            }}>
+                                                <div> {ele.name} </div>
+                                                <div className="subtext" dangerouslySetInnerHTML={{__html: ele.brief}} />
                                                 {/* {ele.brief} */}
                                             </div>
                                         </div>
                                         <div className="imgWrapper"
                                             style={{
-                                                backgroundImage: ('url("' + ele.photo + '"') // (() => (k === 1 ? ele.photo : ele.photo))()
-                                            }}
-                                        >
-                                            <img className="Nimg" src={ele.photo} />
+                                                backgroundImage: ('url("' + ele.photo + '")') // (() => (k === 1 ? ele.photo : ele.photo))()
+                                            }}>
                                         </div>
                                     </div>
                                 </li> : null
