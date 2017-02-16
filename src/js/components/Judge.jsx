@@ -18,17 +18,17 @@ export default CSSModules(class extends Component {
                     'mention': '荒野保護協會理事長',
                     'mention2': ''
                 }, {
+                    'img_link': 'https://nthuactors.github.io/src/js/components/img/judge/j3.jpg',
+                    'name': '史欽泰',
+                    'mention': '前清大科管院院長',
+                    'mention2': '前工研院院長'
+                }, {
                     'img_link': 'https://nthuactors.github.io/src/js/components/img/judge/coming.png',
                     'name': '?',
                     'mention': '陸續邀請中',
                     'mention2': ''
                 }
                 //, {
-                //     'img_link': 'https://nthuactors.github.io/src/js/components/img/p5.jpeg',
-                //     'name': 'Santiago',
-                //     'mention': 'blalabla',
-                //     'mention2': 'blalabla'
-                // }, {
                 //     'img_link': 'https://nthuactors.github.io/src/js/components/img/p6.jpg',
                 //     'name': 'Caroline',
                 //     'mention': 'blalabla',
