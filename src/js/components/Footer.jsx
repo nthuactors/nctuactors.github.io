@@ -8,9 +8,11 @@ export default CSSModules(class extends Component {
                 <div className="FooterMedia">
                     <ul>
                         <li>
-                            <div className="IconImg">
-                                <img src="https://nthuactors.github.io/src/js/components/img/social.png"/>
-                            </div>
+                            <a href="https://www.facebook.com/nthuactors/" target="_blank">
+                                <div className="IconImg">
+                                    <img src="https://nthuactors.github.io/src/js/components/img/social.png"/>
+                                </div>
+                            </a>
                         </li>
                         <li>
                             <a href="mailto:celia.chen@iss.nthu.edu.tw">
