@@ -8,10 +8,7 @@ const initialState = {
 export default handleActions({
     GET_NOMINATE: {
         next (state, {payload}) {
-            let csv = csvjson.toArray(payload, {
-                delimiter: ',',
-                quote: '"'
-            })
+            let csv = csvjson.toArray(payload)
             csv.shift()
             let list = csv.map((ele) => ({
                 'name': ele[0],
