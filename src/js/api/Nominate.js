@@ -8,7 +8,7 @@ export default {
                 xhr.send()
                 xhr.onload = (msg) => {
                     resolve(xhr.responseText)
-                    // console.log(xhr.responseText)
+                    console.log(xhr.responseText)
                 }
             }
         )
