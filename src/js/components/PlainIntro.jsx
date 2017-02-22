@@ -78,6 +78,19 @@ export default CSSModules(class extends Component {
                                 教育紮根
                             </div>
                         </li>
+                        <li>
+                            <div className="IconImg">
+                                <ReactSVG
+                                    path="https://nthuactors.github.io/src/js/components/img/medical.svg"
+                                    className="svgItem"
+                                    style={{
+                                    }}
+                                />
+                            </div>
+                            <div className="IconBrief">
+                                知識翻新
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
