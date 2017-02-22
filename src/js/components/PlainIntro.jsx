@@ -79,6 +79,7 @@ export default CSSModules(class extends Component {
                             </div>
                         </li>
                         <li>
+                            
                             <div className="IconImg">
                                 <ReactSVG
                                     path="https://nthuactors.github.io/src/js/components/img/know.svg"
