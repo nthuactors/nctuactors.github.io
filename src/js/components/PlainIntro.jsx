@@ -81,7 +81,7 @@ export default CSSModules(class extends Component {
                         <li>
                             <div className="IconImg">
                                 <ReactSVG
-                                    path="https://nthuactors.github.io/src/js/components/img/medical.svg"
+                                    path="https://nthuactors.github.io/src/js/components/img/know.svg"
                                     className="svgItem"
                                     style={{
                                     }}
