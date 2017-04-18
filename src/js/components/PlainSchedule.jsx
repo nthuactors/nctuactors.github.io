@@ -20,12 +20,12 @@ export default CSSModules(class extends Component {
                 }, {
                     'img_link': 'https://nthuactors.github.io/src/js/components/img/judge.svg',
                     'brief': '',
-                    'mention': '3/17 ~ 4/09',
+                    'mention': '3/17 ~ 4/17',
                     'mention2': '評審討論及決議'
                 }, {
                     'img_link': 'https://nthuactors.github.io/src/js/components/img/favorites.svg',
                     'brief': '',
-                    'mention': '4/10',
+                    'mention': '4/18',
                     'mention2': '公布名單'
                 }
             ]
