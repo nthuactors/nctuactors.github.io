@@ -20,6 +20,7 @@ export default handleActions({
                 'brief': ele[5],
                 'long': ele[6]
             }))
+            console.log('reduce: ', list)
             return {
                 list
             }

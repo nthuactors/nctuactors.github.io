@@ -29,7 +29,7 @@ export default CSSModules(class extends Component {
                     'img_link': 'https://nthuactors.github.io/src/js/components/img/judge/j3.jpg',
                     'name': '史欽泰',
                     'mention': '前清大科管院院長',
-                    'mention2': '在這次尋找清華築夢人的評審作業中，很高興看到35歲以下的新一代清華學生及校友勇敢作夢並付之實現的一面。案例中看到清華大學學生的特質，受到清華大學自由的學風的培育，不僅有理工科的理性也具備人文素養，充滿了令人感動的故事。在這四十多位清華大學的年輕人，我被他們的夢想所感動。有的在學術、科學上的全心投入，有的對於環境變化帶來氣候變遷的影響，希望有所貢獻，有的看到創新的機會，為理想創業，夢想實踐帶來的價值。有追求個人天賦的藝術家、有發揮文字力量的作家、記者，希望由作品、筆尖留下深刻的印象。有關懐弱勢族群、高齡化等社會企業家。有的已經付之行動、參加了創業團隊，有的逰世界，體驗不同文化。雖然有的看來離夢想還有很長的路要走，我以鼓勵的態度來看待這些夢想家，希望他們代表著清華大學的新一代的榜樣，經由他們逐夢的過程，對未來的社會、世界産生重大的影響。'
+                    'mention2': '在這次尋找清華築夢人的評審作業中 <br/>，很高興看到35歲以下的新一代清華學生及校友勇敢作夢並付之實現的一面。案例中看到清華大學學生的特質，受到清華大學自由的學風的培育，不僅有理工科的理性也具備人文素養，充滿了令人感動的故事。在這四十多位清華大學的年輕人，我被他們的夢想所感動。有的在學術、科學上的全心投入，有的對於環境變化帶來氣候變遷的影響，希望有所貢獻，有的看到創新的機會，為理想創業，夢想實踐帶來的價值。有追求個人天賦的藝術家、有發揮文字力量的作家、記者，希望由作品、筆尖留下深刻的印象。有關懐弱勢族群、高齡化等社會企業家。有的已經付之行動、參加了創業團隊，有的逰世界，體驗不同文化。雖然有的看來離夢想還有很長的路要走，我以鼓勵的態度來看待這些夢想家，希望他們代表著清華大學的新一代的榜樣，經由他們逐夢的過程，對未來的社會、世界産生重大的影響。'
                 }
             ]
         }
@@ -54,10 +54,11 @@ export default CSSModules(class extends Component {
         .then(() => {
             let temp
             temp = this.props.NominateList
+            let tteemmp = this.props.NominateList
             console.log('qqqq: ', temp)
             console.log('-------------')
             console.log('new: ', _.orderBy(temp, ['name'], ['asc']))
-            this.setState({finalPeople: _.orderBy(temp, ['name'], ['asc'])})
+            this.setState({finalPeople: tteemmp})
         })
     }
     render () {
@@ -132,7 +133,7 @@ export default CSSModules(class extends Component {
                                             <p>{ele.mention}</p>
                                         </div>
                                         <div className="judgeWord">
-                                            <p> {ele.mention2} </p>
+                                            <p dangerouslySetInnerHTML={{__html: ele.mention2}} />
                                         </div>
                                     </li>
                                 ))
