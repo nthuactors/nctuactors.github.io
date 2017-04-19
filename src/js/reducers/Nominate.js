@@ -10,7 +10,8 @@ export default handleActions({
         next (state, {payload}) {
             let csv = csvjson.toArray(payload)
             csv.shift()
-            let list = csv.map((ele) => ({
+            let list = csv.map((ele, id) => ({
+                'id': id,
                 'name': ele[0],
                 'introduction': ele[1],
                 'photo': ele[2],

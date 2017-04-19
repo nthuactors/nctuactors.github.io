@@ -75,10 +75,10 @@ export default CSSModules(class extends Component {
                 <div className="peopleBox">
                     <ul>
                     {this.state.filter === 'first'
-                        ? this.props.NominateList.map((ele, id) => (
+                        ? this.props.NominateList.map((ele) => (
                                 ele[this.state.filter]
-                                ? <li key={id} >
-                                    <div className="listContain" onClick={() => { this.showMore(id) } }>
+                                ? <li key={ele.id} >
+                                    <div className="listContain" onClick={() => { this.showMore(ele.id) } }>
                                         <div className="textWrapper">
                                             <div style={{
                                                 fontSize: '1em'
@@ -98,10 +98,10 @@ export default CSSModules(class extends Component {
                             )
                         )
                     : this.state.filter === 'last'
-                        ? this.state.finalPeople.map((ele, id) => (
+                        ? this.state.finalPeople.map((ele) => (
                                 ele[this.state.filter]
-                                ? <li key={id} >
-                                    <div className="listContain" onClick={() => { this.showMore(id) } }>
+                                ? <li key={ele.id} >
+                                    <div className="listContain" onClick={() => { this.showMore(ele.id) } }>
                                         <div className="textWrapper">
                                             <div style={{
                                                 fontSize: '1em'
@@ -123,7 +123,7 @@ export default CSSModules(class extends Component {
                         : <div className='judgeWords'>
                             {
                                 this.state.JudgeList.map((ele, id) => (
-                                    <li>
+                                    <li key={id}>
                                         <div className="judgeIntro">
                                             <div className="judgeWrapper">
                                                 <img src={ele.img_link}/>
